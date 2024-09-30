@@ -14,6 +14,7 @@ return {
 				notify = false,
 				telescope = true,
 				which_key = true,
+				noice = true,
 				mini = {
 					enabled = true,
 					indentscope_color = "",
