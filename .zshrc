@@ -142,7 +142,8 @@ alias szsh='source ~/.zshrc'
 
 alias snt='source ~/node/tooling/node_edge_provisioning/venv/bin/activate' 
 alias spc='source ~/node/tooling/pre-commit-env/bin/activate' 
-alias exec-virtual='docker exec -it virtualized_workspace_noetic bash'
+alias noetic-build='docker exec -it virtualized_workspace_noetic zsh'
+alias jazzy-build='docker exec -it jazzy_build zsh'
 
 # use bat as replacement for bat
 alias cat='bat --paging=never --style=plain'
