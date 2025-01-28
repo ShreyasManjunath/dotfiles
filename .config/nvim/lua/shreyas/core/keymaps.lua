@@ -21,3 +21,6 @@ keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }
 -- ctrl + s for saving the buffer
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Ctrl + S => Save buffer" })
 keymap.set("i", "<C-s>", "<ESC>:w<CR>", { desc = "Ctrl + S => Save buffer" })
+
+-- No highlight after searching a word in a buffer
+keymap.set("n", "<leader>cc", "<cmd>nohlsearch<CR>")
