@@ -81,7 +81,7 @@ ENABLE_CORRECTION="true"
 plugins=(
    git 
    autojump
-   docker
+   # docker
    zsh-autosuggestions
    zsh-syntax-highlighting
 )
@@ -152,4 +152,14 @@ alias -g :B='-h 2>&1 | bat --language=help --style=plain'
 
 alias cfg='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias lg-bare='lazygit --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+# lazydocker
+alias lzd='lazydocker'
 
+# NODE Robotics VPN
+alias nvpn='openvpn ~/system-plugins/openvpn/smanjunath_new.ovpn'
+# Devcontainers
+if [[ -f ~/.devcontainer-completion.zsh ]]; then
+  source ~/.devcontainer-completion.zsh > /dev/null 2>&1
+fi
+
+source ~/fzf-docker/docker-fzf
